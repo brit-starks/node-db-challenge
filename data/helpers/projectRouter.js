@@ -1,6 +1,6 @@
 const express = require('express');
 
-const Projects = require('./projectModel.js');
+const Projects = require('./projectModel');
 
 const router = express.Router();
 
@@ -41,3 +41,5 @@ router.post('/', (req, res) => {
     res.status(500).json({ message: 'Failed to create new project' });
   });
 });
+
+module.exports = router;
