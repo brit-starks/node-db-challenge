@@ -40,7 +40,11 @@ Demonstrate your understanding of this week's concepts by answering the followin
 
 - [ ] Explain the difference between `Relational Databases` and `SQL`.
 
+<<<<<<< HEAD
       Relational databases has multiple tables that hold data that are related to each other. SQL is a query language used to interact with these databases.
+=======
+Relational databases has multiple tables that hold data that are related to each other. SQL is a query language used to interact with these databases.
+>>>>>>> fca4f7190cdfe9d7cdfa169e2f2c92a760e39cf9
 
 - [ ] Why do tables need a `primary key`?
 
@@ -48,11 +52,19 @@ Demonstrate your understanding of this week's concepts by answering the followin
 
 - [ ] What is the name given to a table column that references the primary key on another table.
 
+<<<<<<< HEAD
       It is called a foreign key.
 
 - [ ] What do we need in order to have a _many to many_ relationship between two tables.
 
       We need to create a third intermediary table to link both tables together and keep track of the relationship between the two tables.
+=======
+It is called a foreign key.
+
+- [ ] What do we need in order to have a _many to many_ relationship between two tables.
+
+We need to create a third intermediary table to link both tables together and keep track of the relationship between the two tables.
+>>>>>>> fca4f7190cdfe9d7cdfa169e2f2c92a760e39cf9
 
 ## Minimum Viable Product
 

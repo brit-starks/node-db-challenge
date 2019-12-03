@@ -8,7 +8,6 @@ server.use(express.json());
 server.use(helmet());
 server.use(morgan('dev'));
 
-server.use('/api/project');
-server.use('/api/action');
+// server.use('/api/project', projectRouter);
 
 module.exports = server;
