@@ -20,7 +20,9 @@ exports.up = function(knex) {
       .unsigned()
       .notNullable()
       .references('id')
-      .inTable('task');
+      .inTable('task')
+      .onUpdate('CASCADE')
+      .onDelete('CASCADE');
   })
   .createTable('tasks', tbl => {
     tbl.increments();
@@ -31,7 +33,9 @@ exports.up = function(knex) {
       .unsigned()
       .notNullable()
       .references('id')
-      .inTable('project');
+      .inTable('project')
+      .onUpdate('CASCADE')
+      .onDelete('CASCADE');
     tbl.boolean('completed', false)
       .notNullable();
   });
