@@ -8,7 +8,7 @@ exports.up = function(knex) {
       .unique()
       .notNullable();
     tbl.text('description')
-    tbl.boolean(false)
+    tbl.boolean('completed:', false)
       .notNullable()
   })
   .createTable('resources', tbl => {
@@ -32,7 +32,7 @@ exports.up = function(knex) {
       .notNullable()
       .references('id')
       .inTable('project');
-    tbl.boolean(false)
+    tbl.boolean('completed', false)
       .notNullable();
   });
 };
